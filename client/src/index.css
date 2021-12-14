@@ -1,0 +1,120 @@
+input[type="file"]::file-selector-button {
+  border: 1px solid #999999;
+  padding: 0.2em 0.4em;
+
+  background-color: #f4f4f4;
+  transition: 0.3s;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 140px;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 20px;
+
+  text-decoration: none;
+
+  color: #6c7686;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.29);
+
+  display: inline-block;
+  background: #c0c0c0;
+
+  cursor: pointer;
+  transition: all ease-in-out 100ms;
+
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(-179deg, #f4f4f4 0%, #c0c0c0 100%);
+  box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22),
+    0 10px 13px -4px rgba(0, 0, 0, 0.34),
+    inset 0 30px 30px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: 400px) {
+    margin: 35px;
+  }
+}
+
+input[type="file"]::file-selector-button:hover {
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22),
+    0 10px 13px 0px rgba(0, 0, 0, 0.34),
+    inset 0 18px 18px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -18px 18px 0 rgba(0, 0, 0, 0.1);
+  transform: translate(0px, -1px);
+  backface-visibility: hidden;
+  color: #7a8393;
+}
+input[type="file"]::file-selector-button:active {
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22),
+    0 10px 13px 0px rgba(0, 0, 0, 0.34),
+    inset 0 3px 3px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -3px 3px 0 rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f7882f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+}
